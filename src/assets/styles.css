@@ -1,0 +1,337 @@
+/* Global Styles */
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.app-container {
+  display: flex;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+}
+
+/* Description Component Styles */
+.description-container {
+  flex: 1;
+  padding: 2rem;
+  background-color: white;
+  border-right: 1px solid #e0e0e0;
+}
+
+.band-image {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+}
+
+.band-name {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.event-details {
+  font-size: 1.1rem;
+  color: #666;
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.event-detail-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.event-detail-item svg {
+  color: #007bff;
+  flex-shrink: 0;
+}
+
+/* Band Switcher Styles */
+.band-switcher {
+  margin-top: 2rem;
+  padding-top: 2rem;
+  border-top: 1px solid #e0e0e0;
+}
+
+.switcher-title {
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.band-options {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.band-option {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 1rem;
+  border: 2px solid #e9ecef;
+  border-radius: 8px;
+  background-color: white;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  text-align: left;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.band-option:hover {
+  border-color: #007bff;
+  background-color: #f8f9ff;
+}
+
+.band-option.active {
+  border-color: #007bff;
+  background-color: #007bff;
+  color: white;
+}
+
+.band-option-name {
+  font-weight: 600;
+  font-size: 1rem;
+  margin-bottom: 0.25rem;
+}
+
+.band-option.active .band-option-name {
+  color: white;
+}
+
+.band-option-location {
+  font-size: 0.85rem;
+  color: #666;
+}
+
+.band-option.active .band-option-location {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+/* Main Content Area */
+.content-container {
+  flex: 1;
+  padding: 2rem;
+  background-color: white;
+}
+
+/* Tickets Component Styles */
+.tickets-container {
+  margin-bottom: 2rem;
+}
+
+.tickets-title {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #333;
+}
+
+.ticket-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+  background-color: #f8f9fa;
+}
+
+.ticket-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
+
+.ticket-info {
+  flex: 1;
+}
+
+.ticket-name {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.3rem;
+  color: #333;
+  font-weight: 600;
+}
+
+.ticket-description {
+  margin: 0 0 0.75rem 0;
+  color: #666;
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+.ticket-price {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #007bff;
+}
+
+.quantity-controls {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex-shrink: 0;
+}
+
+.quantity-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border: 2px solid #ddd;
+  background-color: white;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: all 0.2s ease;
+  font-size: 18px;
+  font-weight: bold;
+  color: #666;
+}
+
+.quantity-button:hover:not(:disabled) {
+  background-color: #007bff;
+  border-color: #007bff;
+  color: white;
+}
+
+.quantity-button:disabled {
+  background-color: #f8f9fa;
+  border-color: #e9ecef;
+  color: #adb5bd;
+  cursor: not-allowed;
+}
+
+.quantity-display {
+  min-width: 3rem;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 0.5rem;
+  border: 1px solid #e9ecef;
+  border-radius: 4px;
+  background-color: #f8f9fa;
+}
+
+/* Forms Component Styles */
+.order-summary {
+  background-color: #e9ecef;
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.total-price {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.5rem;
+}
+
+.ticket-count {
+  margin: 0;
+  color: #666;
+}
+
+.section-title {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.form-input {
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+.form-input:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25);
+}
+
+.input-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.full-width-input {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.full-width-input-spaced {
+  width: 100%;
+  margin-bottom: 1.5rem;
+}
+
+.payment-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.purchase-button {
+  width: 100%;
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: white;
+  background-color: #007bff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.purchase-button:hover:not(:disabled) {
+  background-color: #0056b3;
+}
+
+.purchase-button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .app-container {
+    flex-direction: column;
+  }
+  
+  .description-container {
+    border-right: none;
+    border-bottom: 1px solid #e0e0e0;
+  }
+  
+  .input-grid,
+  .payment-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .band-name {
+    font-size: 2rem;
+  }
+  
+  .tickets-title {
+    font-size: 1.5rem;
+  }
+}

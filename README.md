@@ -12,7 +12,7 @@ A React-based ticket purchasing application for touring bands, built with TypeSc
 
 ## 🔗 Code Repository
 
-[**GitHub Repository:**](https://github.com/fernicio07/scaling-winner)
+[**GitHub Repository**](https://github.com/fernicio07/scaling-winner)
 
 ## 🚀 How to Run the Code
 

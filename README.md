@@ -4,6 +4,12 @@
 
 A React-based ticket purchasing application for touring bands, built with TypeScript, and component architecture.
 
+## 🌐 Live Demo
+
+**Deployed Application:** https://scaling-winner-ten.vercel.app
+
+*The application is deployed on Vercel for easy testing and review.*
+
 ## 🔗 Code Repository
 
 [**GitHub Repository:**](https://github.com/fernicio07/scaling-winner)
